@@ -1,0 +1,86 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+nav{
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 5%;
+}
+.contenedor {
+    padding: 0px;
+    margin: 0px;
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    overflow: hidden;
+    background-color: bisque;
+}
+
+.carusel {
+    background-color: blue;
+    width: 400%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+}
+
+.slide {
+    width: calc(100% / 4);
+    height: 100%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;/* Asegura que la imagen se ajuste al contenedor sin recortarse */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.puntos {
+    padding: 0px;
+    margin: 0px;
+    background-color: #4da254;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.punto {
+    width: 15px;
+    height: 15px;
+    margin: 0px 10px;
+    background-color: rgba(145, 25, 25, 0.5);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.punto.activo {
+    width: 15px;
+    height: 15px;
+    margin: 0px 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #00eeff;
+    box-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff, 0 0 30px #00eeff;
+}
